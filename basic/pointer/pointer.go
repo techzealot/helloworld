@@ -39,4 +39,12 @@ func main() {
 	var e int
 	c, d, e = d, c, d/c
 	fmt.Println(c, d, e) //6 5 1 将右侧变量先运算替换，然后一次赋多值
+
+	var pa *int
+	fmt.Println(*pa)
+	fmt.Println(&pa)
+
+	var pb int
+	fmt.Println(&pb)
+	//fmt.Println(*pb) //compile error
 }
