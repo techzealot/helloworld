@@ -18,6 +18,7 @@ func convertToBin(n int) string {
 	}
 	return result
 }
+
 func printFile(filename string) {
 	file, err := os.Open(filename)
 	if err != nil {
@@ -37,8 +38,8 @@ func forever() {
 
 func main() {
 	fmt.Println(
-		convertToBin(5),  //101
-		convertToBin(13), //1101
+		convertToBin(5),  // 101
+		convertToBin(13), // 1101
 		convertToBin(1234),
 		convertToBin(0),
 	)

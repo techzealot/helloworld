@@ -2,7 +2,7 @@ package queue
 
 type Queue []int
 
-//指针接收者传递的为地址值，操作时需要*(取指针)操作
+// 指针接收者传递的为地址值，操作时需要*(取指针)操作
 func (q *Queue) Push(v int) {
 	*q = append(*q, v)
 }

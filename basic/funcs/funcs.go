@@ -7,7 +7,7 @@ import (
 	"runtime"
 )
 
-//不要滥用多值返回，一般最后一个为error
+// 不要滥用多值返回，一般最后一个为error
 func div(a, b int) (q, r int) {
 	return a / b, a % b
 }
@@ -52,7 +52,7 @@ func main() {
 	} else {
 		fmt.Println(result)
 	}
-	//匿名函数
+	// 匿名函数
 	fmt.Println(apply(func(a int, b int) int {
 		return int(math.Pow(float64(a), float64(b)))
 	}, 3, 4))

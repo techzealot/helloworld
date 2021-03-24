@@ -7,8 +7,7 @@ func PrintSlice(s []int) {
 }
 
 func main() {
-
-	var s []int //zero value for slice is []
+	var s []int // zero value for slice is []
 
 	PrintSlice(s)
 
@@ -26,7 +25,7 @@ func main() {
 
 	fmt.Println(s2) //[2 4 6 8 0 0 0 0 0 0 0 0 0 0 0 0]
 
-	//删除下标为3的元素
+	// 删除下标为3的元素
 	s2 = append(s2[:3], s2[4:]...)
 
 	PrintSlice(s2) //[2 4 6 0 0 0 0 0 0 0 0 0 0 0 0] ,len= 15 ,cap= 16

@@ -19,6 +19,5 @@ func main() {
 		} else {
 			fmt.Println(a(i))
 		}
-
 	}
 }

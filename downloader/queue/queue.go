@@ -2,7 +2,7 @@ package genericqueue
 
 type Queue []interface{}
 
-//指针接收者传递的为地址值，操作时需要*(取指针)操作
+// 指针接收者传递的为地址值，操作时需要*(取指针)操作
 func (q *Queue) Push(v interface{}) {
 	*q = append(*q, v)
 }

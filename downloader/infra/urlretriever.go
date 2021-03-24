@@ -5,8 +5,7 @@ import (
 	"net/http"
 )
 
-type Retriever struct {
-}
+type Retriever struct{}
 
 func (Retriever) Get(url string) string {
 	resp, err := http.Get(url)

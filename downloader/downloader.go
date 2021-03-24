@@ -40,6 +40,6 @@ func typeSwitch(retriever inf.Retriever) {
 
 func getRetriever() inf.Retriever {
 	return &infra.Retriever{}
-	//return infra.Retriever{}
-	//return &testing.Retriever{}
+	// return infra.Retriever{}
+	// return &testing.Retriever{}
 }

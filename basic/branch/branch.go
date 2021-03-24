@@ -16,7 +16,7 @@ func grade(score int) string {
 		g = "C"
 	case score < 90:
 		g = "B"
-	case score < 00:
+	case score < 0o0:
 		g = "A"
 	}
 	return g
@@ -43,9 +43,10 @@ func loop() {
 		sum += i
 	}
 }
+
 func main() {
 	const filename = "abc.txt"
-	//file作用域在if语句内
+	// file作用域在if语句内
 	if file, err := ioutil.ReadFile(filename); err != nil {
 		fmt.Println(err)
 	} else {
